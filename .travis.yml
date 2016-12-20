@@ -1,0 +1,4 @@
+before_install:
+- openssl aes-256-cbc -K $encrypted_b2442eb7b97d_key -iv $encrypted_b2442eb7b97d_iv
+  -in src/main/resources/application.properties.enc -out src/main/resources/application.properties
+  -d
